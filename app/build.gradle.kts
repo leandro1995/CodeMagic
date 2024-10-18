@@ -20,8 +20,8 @@ android {
         applicationId = "com.leandro1995.codemagic"
         minSdk = 22
         targetSdk = 34
-        versionCode = 2
-        versionName = "1.0.1"
+        versionCode = 4
+        versionName = "1.0.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
