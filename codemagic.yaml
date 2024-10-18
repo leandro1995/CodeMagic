@@ -1,0 +1,41 @@
+workflows:
+  android-workflow:
+    name: Android Workflow Email
+    max_build_duration: 60
+
+    environment:
+      vars:
+        EMAIL_RECIPIENT: "leccbo1995@gmail.com"
+      android_signing:
+        - KeyStore
+
+    scripts:
+      - name: Check for gradlew
+        script: ls -la
+
+      - name: Set execute permissions for gradlew
+        script: chmod +x ./gradlew
+
+      - name: Run Unit Tests
+        script: ./gradlew test
+
+      - name: Check Code
+        script: ./gradlew check
+
+      - name: Build Android App Bundle
+        script: ./gradlew bundleRelease
+
+    artifacts:
+      - app/build/outputs/bundle/release/app-release.aab
+
+    publishing:
+      email:
+        recipients:
+          - leccbo1995@gmail.com
+        notify:
+          success: true
+          failure: true
+
+    triggering:
+      events:
+        - tag
