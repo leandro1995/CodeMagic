@@ -7,7 +7,7 @@ workflows:
       vars:
         EMAIL_RECIPIENT: "leccbo1995@gmail.com"
       android_signing:
-        - KeyStore
+        - codeMagic
 
     scripts:
       - name: Check for gradlew
