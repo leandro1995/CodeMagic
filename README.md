@@ -34,7 +34,7 @@ Si deseas profundizar en el manejo de Gitflow, puedes consultar este artículo: 
 
        environment:
          vars:
-           EMAIL_RECIPIENT: "leccbo1995@gmail.com"
+           EMAIL_RECIPIENT: "********@******.com"
          android_signing:
            - codeMagic
 
@@ -60,7 +60,7 @@ Si deseas profundizar en el manejo de Gitflow, puedes consultar este artículo: 
        publishing:
          email:
            recipients:
-             - leccbo1995@gmail.com
+             - ********@******.com
            notify:
              success: true
              failure: true
@@ -77,7 +77,7 @@ Si deseas profundizar en el manejo de Gitflow, puedes consultar este artículo: 
     2. Después de hacer un push a la rama principal, se iniciará el proceso definido en el archivo mencionado anteriormente. El resultado, ya sea error o aprobación, se mostrará de la siguiente manera:<br><br>
         <p align="center">
                 <img src="./images/file_three.png" alt="Descripción de la imagen">
-        </p><br>
+        </p>
 
 ## 💭 Tener en cuenta:
 
@@ -90,5 +90,5 @@ Si deseas profundizar en el manejo de Gitflow, puedes consultar este artículo: 
 
 1. [Documentación de Codemagic](https://docs.codemagic.io/?utm_source=app&utm_campaign=main-page&_gl=1*yf18d8*_gcl_au*MTYwNDI5NTg0LjE3MjYzMDY1NzE)
 2. [Plataforma de Codemagic](https://codemagic.io/start/)
-3. [Medium]()
+3. [Medium](https://leccbo1995.medium.com/codemagic-cd-ci-fe06a5bf382e)
 4. [GitHub](https://github.com/leandro1995/CodeMagic/tree/main)
